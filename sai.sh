@@ -1,5 +1,11 @@
 #!/system/bin/sh
 
+if [ "$EUID" -ne 0 ];then
+	echo "Please run as root"
+	sudo bash $(realpath $0) $(realpath $1)
+	exit
+fi
+
 # Split APKs Installer | SAI #
 : '
 This script allows you to install splits-apk with one adb shell command! push this script to your device with adb and run it:
