@@ -6,5 +6,6 @@ cp TouhouLostWordJP.apks /data/data/com.termux/files/home/TouhouLostWord/TouhouL
 settings put global package_verifier_enable 0
 pm install /data/data/com.termux/files/home/TouhouLostWord/GameTool.apk
 pm install /data/data/com.termux/files/home/TouhouLostWord/Reqable.apk
+pm install /data/data/com.termux/files/home/TouhouLostWord/MiX.apk
 /data/data/com.termux/files/home/TouhouLostWord/sai.sh /data/data/com.termux/files/home/TouhouLostWord/TouhouLostWordJP.apks
 echo "Done"
