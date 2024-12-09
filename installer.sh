@@ -1,5 +1,5 @@
 #!/bin/bash
-pkg install -y git wget
+pkg install -y git wget tsu
 if [ "$EUID" -ne 0 ];then
 	echo "Please run as root"
 	sudo bash $(realpath $0) $(realpath $1)
