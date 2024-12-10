@@ -1,6 +1,12 @@
 #!/bin/php
 <?php
-$config = trim(readline("Info: "));
+if (file_exists("/data/data/com.termux/files/home/TouhouLostWord/info.json")) $config = file_get_contents("/data/data/com.termux/files/home/TouhouLostWord/info.json");
+else {
+	$config = trim(readline("Info: "));
+	file_put_contents("/data/data/com.termux/files/home/TouhouLostWord/info.json", $config);
+	shell_exec("mkdir -p /data/data/com.termux/files/home/.termux/boot");
+	shell_exec("cp /data/data/com.termux/files/home/TouhouLostWord/live.sh /data/data/com.termux/files/home/.termux/boot/live.sh");
+}
 while (1) {
 	$img = "/data/data/com.termux/files/home/".rand(10000000, 999999999).".png";
 	shell_exec("/system/bin/screencap -p -d 0 \"$img\"");
