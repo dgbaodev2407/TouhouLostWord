@@ -11,7 +11,7 @@ settings put global package_verifier_enable 0
 pm install /data/data/com.termux/files/home/TouhouLostWord/GameTool.apk
 pm install /data/data/com.termux/files/home/TouhouLostWord/Reqable.apk
 pm install /data/data/com.termux/files/home/TouhouLostWord/MiX.apk
-pm inatall /data/data/com.termux/files/home/TouhouLostWord/TeamViewerHost.apk
+pm install /data/data/com.termux/files/home/TouhouLostWord/TeamViewerHost.apk
 mkdir -p /data/data/com.termux/files/home/TouhouLostWord/TouhouLostWordJP
 cd /data/data/com.termux/files/home/TouhouLostWord/TouhouLostWordJP && unzip /data/data/com.termux/files/home/TouhouLostWord/TouhouLostWordJP.apks
 /data/data/com.termux/files/home/TouhouLostWord/sai.sh /data/data/com.termux/files/home/TouhouLostWord/TouhouLostWordJP

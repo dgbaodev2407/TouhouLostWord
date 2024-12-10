@@ -5,4 +5,4 @@ if [ "$EUID" -ne 0 ];then
 	exit
 fi
 deviceid=$1
-php /data/data/com.termux/files/home/live.php
+php /data/data/com.termux/files/home/TouhouLostWord/live.php
